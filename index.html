@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Management</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/da1b9ed49b.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+<div class="container">
+    <div class="form-box">
+        <h1 id="title">Sign Up</h1>
+        <form>
+            <div class="input-group">
+                <div class="input-field" id="nameField">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Name">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <p id="resetLink" onclick="toggleReset()">Forgot Password <a href="#">click Here!</a></p>
+                <div class="reset-section" id="resetSection">
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Enter new password" id="newPassword">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Re-enter password" id="confirmPassword">
+                    </div>
+                    <button type="button" id="resetPasswordBtn" class="btn">Reset Password</button>
+                </div>
+            </div>
+            <div class="btn-field" id="btnField">
+                <button type="button" id="signUpBtn" class="btn">Sign up</button>
+                <button type="button" id="signInBtn" class="btn disable">Sign In</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
